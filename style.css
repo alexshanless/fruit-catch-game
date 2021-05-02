@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #516dff;
+  background-color: rgb(22, 165, 165);
   color: white;
   font-family: "Press Start 2P", sans-serif;
   margin: 0;
@@ -23,7 +23,7 @@ h1 {
 .btn {
   border: 0;
   background-color: white;
-  color: #516dff;
+  color: rgb(22, 165, 165);
   padding: 15px 20px;
   font-family: inherit;
   cursor: pointer;
@@ -51,7 +51,7 @@ h1 {
   margin-top: -100vh;
 }
 
-.insects-list {
+.fruits-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -63,9 +63,10 @@ h1 {
   margin: 10px;
 }
 
-.choose-insect-btn {
+.choose-fruit-btn {
   background-color: transparent;
   border: 2px solid white;
+  margin-right: 10px;
   color: white;
   cursor: pointer;
   font-family: inherit;
@@ -73,16 +74,16 @@ h1 {
   height: 150px;
 }
 
-.choose-insect-btn:hover {
+.choose-fruit-btn:hover {
   background-color: white;
-  color: #516dff;
+  color: rgb(22, 165, 165);
 }
 
-.choose-insect-btn:active {
+.choose-fruit-btn:active {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.choose-insect-btn img {
+.choose-fruit-btn img {
   width: 100px;
   height: 100px;
   object-fit: contain;
@@ -126,23 +127,23 @@ h1 {
   transform: translate(-50%, 150%);
 }
 
-.insect {
+.fruit {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100px;
   height: 100px;
   position: absolute;
-  cursor: pointer;
+  cursor: grab;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.3s ease-out;
 }
 
-.insect.caught {
+.fruit.caught {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.insect img {
+.fruit img {
   width: 100px;
   height: 100px;
 }
